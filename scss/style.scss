@@ -1,0 +1,107 @@
+// Variables
+$myFont: 'Montserrat',
+sans-serif;
+$myColorWhite:#fdfdfd;
+$myColorGrey:#E5E9E8;
+$myColorYelow:#f8d377;
+$myColorBlack:#030303;
+
+/*************** END OF VARIABLES ******************/
+
+* {
+    margin: 0;
+    font-family: $myFont;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $myColorGrey;
+    height: 100vh;
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 10px;
+        background-color: $myColorGrey;
+        .logoContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            span {
+                margin-top: 5px;
+                font-weight: 500;
+                font-size: 17px;
+            }
+        }
+        .options {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a {
+                text-decoration: none;
+                color: $myColorBlack;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            form {
+                margin-left: 15px;
+                label {
+                    position: absolute;
+                    left: -99999px;
+                }
+                select {
+                    border: none;
+                    background-color: transparent;
+                    font-size: 16px;
+                    &:focus {
+                        border: 1px solid $myColorBlack;
+                    }
+                }
+            }
+        }
+        .searchElement {
+            background-color: transparent;
+            width: 200px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: -150px;
+            svg {
+                margin-left: 10px;
+            }
+            label {
+                position: absolute;
+                left: -99999px;
+            }
+            input {
+                border: none;
+                background-color: transparent;
+                padding: 5px;
+                &::placeholder {
+                    font-size: 14px;
+                    color: $myColorBlack;
+                }
+            }
+        }
+        .languagesForm {
+            label {
+                position: absolute;
+                left: -99999px;
+            }
+            select {
+                border: none;
+                background-color: transparent;
+                font-size: 16px;
+                &:focus {
+                    border: 1px solid $myColorBlack;
+                }
+            }
+        }
+    }
+}
