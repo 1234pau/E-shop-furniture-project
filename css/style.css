@@ -134,3 +134,94 @@ header nav .languagesForm select {
 header nav .languagesForm select:focus {
   border: 1px solid #030303;
 }
+header .containerHeader {
+  margin: 0 auto;
+  width: 85%;
+  height: 85%;
+}
+header .containerHeader .socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30px;
+  height: 50%;
+  float: left;
+  margin-top: -30px;
+}
+header .containerHeader .socialIcons svg {
+  padding: 10px;
+  width: "2em";
+  height: "2em";
+}
+header .containerHeader .descriptionSection {
+  margin-left: 250px;
+  width: 50%;
+  margin-top: 160px;
+}
+header .containerHeader .descriptionSection h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+header .containerHeader .descriptionSection p {
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 100;
+}
+header .containerHeader .descriptionSection .exploreButton {
+  margin-top: 20px;
+  border: none;
+  background-color: #f8d377;
+  padding: 15px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: 600;
+}
+header .containerHeader .arrowButtons {
+  width: 100px;
+  margin-left: 300px;
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+header .containerHeader .arrowButtons button {
+  width: 200px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+header .containerHeader .chairImage {
+  float: right;
+  width: 50%;
+  height: 100%;
+  margin-top: -600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .containerHeader .chairImage .image {
+  width: 500px;
+  height: 600px;
+}
