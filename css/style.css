@@ -22,7 +22,7 @@ header nav {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-top: 10px;
+  padding-top: 20px;
   background-color: #E5E9E8;
 }
 header nav .logoContainer {
@@ -78,7 +78,7 @@ header nav .options form select:focus {
 header nav .searchElement {
   background-color: transparent;
   width: 200px;
-  height: 25px;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,6 +156,31 @@ header .containerHeader .socialIcons {
   height: 50%;
   float: left;
   margin-top: -30px;
+  position: relative;
+  -webkit-animation: leftIcons;
+          animation: leftIcons;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes leftIcons {
+  0% {
+    left: -600px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes leftIcons {
+  0% {
+    left: -600px;
+  }
+  100% {
+    left: 0;
+  }
 }
 header .containerHeader .socialIcons svg {
   padding: 10px;
@@ -166,6 +191,31 @@ header .containerHeader .descriptionSection {
   margin-left: 250px;
   width: 50%;
   margin-top: 160px;
+  position: relative;
+  -webkit-animation: fromLeft;
+          animation: fromLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes fromLeft {
+  0% {
+    left: -600px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes fromLeft {
+  0% {
+    left: -600px;
+  }
+  100% {
+    left: 0;
+  }
 }
 header .containerHeader .descriptionSection h1 {
   font-size: 40px;
@@ -206,6 +256,12 @@ header .containerHeader .arrowButtons button {
   background-color: transparent;
   cursor: pointer;
 }
+header .containerHeader .arrowButtons button .left {
+  fill: #030303;
+}
+header .containerHeader .arrowButtons button .right {
+  fill: #030303;
+}
 header .containerHeader .chairImage {
   float: right;
   width: 50%;
@@ -222,6 +278,31 @@ header .containerHeader .chairImage {
           justify-content: center;
 }
 header .containerHeader .chairImage .image {
-  width: 500px;
+  width: auto;
   height: 600px;
+  position: relative;
+  -webkit-animation: fromRight;
+          animation: fromRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes fromRight {
+  0% {
+    right: -400px;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes fromRight {
+  0% {
+    right: -400px;
+  }
+  100% {
+    right: 0;
+  }
 }
