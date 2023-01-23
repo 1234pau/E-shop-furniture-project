@@ -1,13 +1,4 @@
-// Variables
-$myFont: 'Montserrat',
-sans-serif;
-$myColorWhite:#fdfdfd;
-$myColorGrey:#E5E9E8;
-$myColorYelow:#f8d377;
-$myColorBlack:#030303;
-
-/*************** END OF VARIABLES ******************/
-
+@import 'variables';
 * {
     margin: 0;
     font-family: $myFont;
@@ -172,6 +163,7 @@ header {
                 width: 150px;
                 font-size: 18px;
                 font-weight: 600;
+                cursor: pointer;
             }
         }
         .arrowButtons {
@@ -218,6 +210,63 @@ header {
                 100% {
                     right: 0;
                 }
+            }
+        }
+    }
+}
+
+.categories {
+    background-color: $myColorWhite;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    .hide {
+        width: 100px;
+        height: 50px;
+    }
+    h1 {
+        margin-left: 100px;
+        padding-bottom: 50px;
+    }
+    .containerItems {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        .item {
+            width: 350px;
+            height: 400px;
+            background-color: $myColorGrey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid $myColorBlack;
+            margin-bottom: 50px;
+            .img {
+                width: 400px;
+                padding: 10px;
+            }
+            h2 {
+                padding: 20px;
+            }
+            img {
+                width: 250px;
+                height: 300px;
+                display: block;
+                margin: 0 auto;
+            }
+            &:hover {
+                background-color: $myColorYelow;
+                border: 2px solid $myColorYelow;
+            }
+            &:hover::after {
+                position: relative;
+                border: 2px solid $myColorBlack;
+                width: 300px;
+                height: 440px;
+                margin-top: -400px;
+                margin-bottom: -45px;
+                top: -11px;
+                bottom: 10px;
+                content: "";
             }
         }
     }
