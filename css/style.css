@@ -340,6 +340,10 @@ header .containerHeader .chairImage .image {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
+.categories .containerItems a {
+  text-decoration: none;
+  color: #030303;
+}
 .categories .containerItems .item {
   width: 350px;
   height: 400px;
