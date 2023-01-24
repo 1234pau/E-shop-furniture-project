@@ -312,13 +312,24 @@ header .containerHeader .chairImage .image {
   padding-top: 100px;
   padding-bottom: 50px;
 }
+.categories .containerButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
 .categories .hide {
   width: 100px;
   height: 50px;
-}
-.categories h1 {
-  margin-left: 100px;
-  padding-bottom: 50px;
+  float: right;
 }
 .categories .containerItems {
   display: -ms-grid;

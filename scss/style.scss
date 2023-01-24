@@ -219,14 +219,24 @@ header {
     background-color: $myColorWhite;
     padding-top: 100px;
     padding-bottom: 50px;
+    .containerButton {
+        //border: 1px solid rgb(51, 255, 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 85%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
     .hide {
         width: 100px;
         height: 50px;
+        float: right;
     }
-    h1 {
-        margin-left: 100px;
-        padding-bottom: 50px;
-    }
+    // h1 {
+    //     margin-left: 100px;
+    //     padding-bottom: 50px;
+    // }
     .containerItems {
         display: grid;
         grid-template-columns: auto auto auto;
