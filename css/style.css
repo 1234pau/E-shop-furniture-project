@@ -327,9 +327,17 @@ header .containerHeader .chairImage .image {
   padding-bottom: 100px;
 }
 .categories .hide {
-  width: 100px;
+  width: 150px;
   height: 50px;
   float: right;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 20px 0 0 0;
+}
+.categories .hide:hover {
+  border-bottom: 1px solid #030303;
 }
 .categories .containerItems {
   display: -ms-grid;
