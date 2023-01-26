@@ -4,6 +4,7 @@ const buttonRight = document.querySelector(".right")
 const buttonleft = document.querySelector(".left")
 const containerItems = document.querySelector(".containerItems")
 const hide = document.querySelector(".hide")
+const imageCover = document.querySelector(".imageCover")
 
 const images = ["pngwing.com.png", "pngwing.com(1).png", "pngwing.com(2).png", "pngwing.com(3).png", "pngwing.com(4).png", "pngwing.com(5).png"]
 
@@ -80,7 +81,7 @@ function createCard(images) {
         imageTag.src = `assets/${image.imagePath}`
         imageTag.alt = "imageTumbnail"
         imageTag.width = "400px"
-        imageTag.height = "500px"
+        imageTag.height = "430px"
             // all of this are attached to containerImg
         containerImg.appendChild(imageTag)
     })
@@ -122,6 +123,18 @@ hide.addEventListener("click", () => {
         condition = true
     }
 })
+
+// update the categories section every time when press "All Categories" button
 setTimeout(() => {
     window.location.hide(true);
 }, 200);
+
+// random image for cover section
+const imageCoverArr = ["sven-brandsma-GZ5cKOgeIB0-unsplash.jpg", "francesca-tosolini-lTILrQvFbIc-unsplash.jpg", "francesca-tosolini-lLDh9JppH2c-unsplash.jpg", "francesca-tosolini-w1RE0lBbREo-unsplash.jpg"]
+
+function setRandomImageCover() {
+    const random = Math.floor(Math.random() * imageCoverArr.length)
+    imageCover.src = `assets/${imageCoverArr[random]}`
+    console.log(random)
+}
+setRandomImageCover()

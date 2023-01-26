@@ -327,6 +327,15 @@ header .containerHeader .chairImage .image {
   padding-bottom: 100px;
 }
 .categories .hide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 150px;
   height: 50px;
   float: right;
@@ -335,6 +344,9 @@ header .containerHeader .chairImage .image {
   font-size: 18px;
   cursor: pointer;
   padding: 20px 0 0 0;
+}
+.categories .hide svg {
+  margin-right: -5px;
 }
 .categories .hide:hover {
   border-bottom: 1px solid #030303;
@@ -396,4 +408,180 @@ header .containerHeader .chairImage .image {
   top: -11px;
   bottom: 10px;
   content: "";
+}
+
+.cover {
+  width: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+.cover .shape {
+  width: 35%;
+  height: 95%;
+  border: 5px solid #030303;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+  margin-left: 800px;
+}
+.cover .lorem {
+  width: 500px;
+  height: 350px;
+  border: 1px solid #030303;
+  padding: 100px;
+  position: relative;
+  z-index: 3;
+  background-color: #fdfdfd;
+  margin-left: -500px;
+}
+.cover .lorem article {
+  font-size: 18px;
+  font-weight: 500;
+}
+.cover .lorem h1 {
+  margin-bottom: 30px;
+}
+.cover .lorem button {
+  margin-top: 35px;
+  background-color: #f8d377;
+  padding: 15px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cover img {
+  border: 1px solid #030303;
+  position: absolute;
+  z-index: 2;
+  inline-size: 60%;
+  height: auto;
+}
+
+.bestsellers {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.bestsellers h1 {
+  margin-bottom: 60px;
+  margin-left: 100px;
+}
+.bestsellers .containerCardBestseller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.bestsellers .containerCardBestseller .arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 50px;
+}
+.bestsellers .containerCardBestseller .arrows svg {
+  cursor: pointer;
+}
+.bestsellers .containerCardBestseller .containerItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 30px;
+  overflow-y: auto;
+}
+.bestsellers .containerCardBestseller .containerBestsellersItems {
+  margin: 40px 100px;
+}
+.bestsellers .containerCardBestseller .containerBestsellersItems .imageAndPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  height: 500px;
+  padding-top: 60px;
+  border: 2px solid transparent;
+}
+.bestsellers .containerCardBestseller .containerBestsellersItems .imageAndPrice:hover {
+  border: 2px solid #030303;
+}
+.bestsellers .containerCardBestseller .containerBestsellersItems .imageAndPrice svg {
+  position: relative;
+  z-index: 9;
+  margin-bottom: -70px;
+  margin-right: -320px;
+}
+.bestsellers .containerCardBestseller .containerBestsellersItems .imageAndPrice .imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #E5E9E8;
+  width: 400px;
+  position: relative;
+  z-index: 3;
+  margin-bottom: 20px;
+}
+.bestsellers .containerCardBestseller .containerBestsellersItems .imageAndPrice .imgContainer:hover {
+  background-color: #f8d377;
+}
+.bestsellers .containerCardBestseller .containerBestsellersItems .imageAndPrice .imgContainer img {
+  inline-size: 90%;
+}
+.bestsellers .containerCardBestseller .containerBestsellersItems h2 {
+  margin-bottom: 15px;
+}
+.bestsellers .containerCardBestseller .containerBestsellersItems span {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.bestsellers .containerCardBestseller .containerBestsellersItems button {
+  margin-bottom: 10px;
+  border: 1px solid #030303;
+  width: 90%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: transparent;
+}
+.bestsellers .containerCardBestseller .containerBestsellersItems button:hover {
+  background-color: #f8d377;
+  border: 1px solid transparent;
 }
