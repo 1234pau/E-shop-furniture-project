@@ -464,6 +464,61 @@ header .containerHeader .chairImage .image {
   height: auto;
 }
 
+.cover2 {
+  width: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+.cover2 .shape2 {
+  width: 45%;
+  height: 95%;
+  border: 5px solid #030303;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+  right: -200px;
+}
+.cover2 .lorem2 {
+  width: 500px;
+  height: 350px;
+  border: 1px solid #030303;
+  padding: 100px;
+  position: absolute;
+  z-index: 3;
+  background-color: #fdfdfd;
+  margin-left: 80px;
+}
+.cover2 .lorem2 article {
+  font-size: 18px;
+  font-weight: 500;
+}
+.cover2 .lorem2 h1 {
+  margin-bottom: 30px;
+}
+.cover2 .lorem2 button {
+  margin-top: 35px;
+  background-color: #f8d377;
+  padding: 15px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cover2 .imageCover2 {
+  border: 1px solid #030303;
+  position: relative;
+  z-index: 2;
+  inline-size: 60%;
+  height: auto;
+  float: right;
+}
+
 .bestsellers {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -496,7 +551,7 @@ header .containerHeader .chairImage .image {
 .bestsellers .containerCardBestseller .arrows svg {
   cursor: pointer;
 }
-.bestsellers .containerCardBestseller .containerItems {
+.bestsellers .containerCardBestseller #containerItemsCarusel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,6 +563,12 @@ header .containerHeader .chairImage .image {
           justify-content: space-between;
   margin-left: 30px;
   overflow-y: auto;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+.bestsellers .containerCardBestseller #containerItemsCarusel::-webkit-scrollbar {
+  display: none;
 }
 .bestsellers .containerCardBestseller .containerBestsellersItems {
   margin: 40px 100px;
@@ -541,6 +602,7 @@ header .containerHeader .chairImage .image {
   z-index: 9;
   margin-bottom: -70px;
   margin-right: -320px;
+  cursor: pointer;
 }
 .bestsellers .containerCardBestseller .containerBestsellersItems .imageAndPrice .imgContainer {
   display: -webkit-box;
@@ -554,6 +616,7 @@ header .containerHeader .chairImage .image {
           justify-content: center;
   background-color: #E5E9E8;
   width: 400px;
+  height: 400px;
   position: relative;
   z-index: 3;
   margin-bottom: 20px;
@@ -562,7 +625,8 @@ header .containerHeader .chairImage .image {
   background-color: #f8d377;
 }
 .bestsellers .containerCardBestseller .containerBestsellersItems .imageAndPrice .imgContainer img {
-  inline-size: 90%;
+  width: 80%;
+  height: auto;
 }
 .bestsellers .containerCardBestseller .containerBestsellersItems h2 {
   margin-bottom: 15px;
@@ -584,4 +648,206 @@ header .containerHeader .chairImage .image {
 .bestsellers .containerCardBestseller .containerBestsellersItems button:hover {
   background-color: #f8d377;
   border: 1px solid transparent;
+}
+
+.sales {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.sales h1 {
+  margin-bottom: 60px;
+  margin-left: 100px;
+}
+.sales .containerCardSales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sales .containerCardSales .arrows2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 50px;
+}
+.sales .containerCardSales .arrows2 svg {
+  cursor: pointer;
+}
+.sales .containerCardSales #containerItemsCaruselSales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 30px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+.sales .containerCardSales #containerItemsCaruselSales::-webkit-scrollbar {
+  display: none;
+}
+.sales .containerCardSales .containerBestsellersItems {
+  margin: 40px 100px;
+}
+.sales .containerCardSales .containerBestsellersItems .imageAndPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  height: 500px;
+  padding-top: 60px;
+  border: 2px solid transparent;
+}
+.sales .containerCardSales .containerBestsellersItems .imageAndPrice:hover {
+  border: 2px solid #030303;
+}
+.sales .containerCardSales .containerBestsellersItems .imageAndPrice svg {
+  position: relative;
+  z-index: 9;
+  margin-bottom: -70px;
+  margin-right: -320px;
+  cursor: pointer;
+}
+.sales .containerCardSales .containerBestsellersItems .imageAndPrice .imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #E5E9E8;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  z-index: 3;
+  margin-bottom: 20px;
+}
+.sales .containerCardSales .containerBestsellersItems .imageAndPrice .imgContainer:hover {
+  background-color: #f8d377;
+}
+.sales .containerCardSales .containerBestsellersItems .imageAndPrice .imgContainer img {
+  width: 80%;
+  height: auto;
+}
+.sales .containerCardSales .containerBestsellersItems h2 {
+  margin-bottom: 15px;
+}
+.sales .containerCardSales .containerBestsellersItems span {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.sales .containerCardSales .containerBestsellersItems button {
+  margin-bottom: 10px;
+  border: 1px solid #030303;
+  width: 90%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: transparent;
+}
+.sales .containerCardSales .containerBestsellersItems button:hover {
+  background-color: #f8d377;
+  border: 1px solid transparent;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #030303;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+footer .logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: auto;
+}
+footer .logoContainer span {
+  color: #fdfdfd;
+  margin-top: 10px;
+}
+footer .ourProducts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: auto;
+}
+footer .ourProducts h2 {
+  color: #fdfdfd;
+  margin-bottom: 10px;
+}
+footer .ourProducts a {
+  text-decoration: none;
+  color: #fdfdfd;
+  text-align: left;
+  margin: 5px;
+  font-size: 18px;
+}
+footer .socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20%;
+  margin-bottom: auto;
+}
+footer .socialIcons svg {
+  color: #fdfdfd;
 }
