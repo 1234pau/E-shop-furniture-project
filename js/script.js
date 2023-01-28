@@ -13,8 +13,8 @@ const arrowRightCarusel2 = document.querySelector(".arrowRightCarusel2")
 const arrowLeftCarusel2 = document.querySelector(".arrowLeftCarusel2")
 const containerItemsCarusel = document.querySelector(".containerItemsCarusel")
 const containerItemsCaruselSales = document.querySelector(".containerItemsCaruselSales")
+    // ELEMENTS ⬆
 
-// ELEMENTS ⬆
 // image hero items
 const images = ["pngwing.com.png", "pngwing.com(1).png", "pngwing.com(2).png", "pngwing.com(3).png", "pngwing.com(4).png", "pngwing.com(5).png"]
 
@@ -269,5 +269,3 @@ function createCardCarusel(images, el1) {
 }
 createCardCarusel(IMAGES_CARUSEL, containerItemsCarusel)
 createCardCarusel(IMAGES_CARUSEL, containerItemsCaruselSales)
-
-console.log(containerItemsCaruselSales)

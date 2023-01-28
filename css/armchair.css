@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 20px;
+  background-color: #fdfdfd;
+}
+nav .logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .logoContainer span {
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 17px;
+}
+nav .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .options a {
+  text-decoration: none;
+  color: #030303;
+}
+nav .options a:hover {
+  text-decoration: underline;
+}
+nav .options form {
+  margin-left: 15px;
+}
+nav .options form label {
+  position: absolute;
+  left: -99999px;
+}
+nav .options form select {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+nav .options form select:focus {
+  border: 1px solid #030303;
+}
+nav .searchElement {
+  background-color: transparent;
+  width: 200px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: -150px;
+}
+nav .searchElement svg {
+  margin-left: 10px;
+}
+nav .searchElement label {
+  position: absolute;
+  left: -99999px;
+}
+nav .searchElement input {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+}
+nav .searchElement input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #030303;
+}
+nav .searchElement input::-moz-placeholder {
+  font-size: 14px;
+  color: #030303;
+}
+nav .searchElement input:-ms-input-placeholder {
+  font-size: 14px;
+  color: #030303;
+}
+nav .searchElement input::-ms-input-placeholder {
+  font-size: 14px;
+  color: #030303;
+}
+nav .searchElement input::placeholder {
+  font-size: 14px;
+  color: #030303;
+}
+nav .languagesForm label {
+  position: absolute;
+  left: -99999px;
+}
+nav .languagesForm select {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+nav .languagesForm select:focus {
+  border: 1px solid #030303;
+}
+
+.armchairImage {
+  width: 85%;
+  height: 80vh;
+  margin: 20px auto;
+  background-image: url("/assets/di_an_h-g_8MrEZAvyE-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.armchairImage h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 150px;
+  color: rgba(240, 248, 255, 0.87);
+}
+
+.linksToParent {
+  width: 85%;
+  padding: 15px 0;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.linksToParent div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.linksToParent div a {
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #030303;
+  cursor: pointer;
+}
+.linksToParent div:hover {
+  text-decoration: underline;
+}
+
+.pagesCategoryLinks {
+  width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px;
+}
+.pagesCategoryLinks a {
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #030303;
+}
+.pagesCategoryLinks a:hover {
+  text-decoration: underline;
+}
+
+.items {
+  width: 85%;
+  height: 100vh;
+  margin: 20px auto;
+  border: 1px solid red;
+}
