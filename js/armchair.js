@@ -24,5 +24,9 @@ switch (valuechanger) {
         break
     default:
         containerChanger.style.backgroundImage = "url(/assets/sven-brandsma-GZ5cKOgeIB0-unsplash.jpg)"
-
 }
+
+
+// fetch("products.json")
+//   .then(response => response.json())
+//   .then(json => console.log(json));
