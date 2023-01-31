@@ -269,3 +269,4 @@ function createCardCarusel(images, el1) {
 }
 createCardCarusel(IMAGES_CARUSEL, containerItemsCarusel)
 createCardCarusel(IMAGES_CARUSEL, containerItemsCaruselSales)
+
