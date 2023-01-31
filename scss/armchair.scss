@@ -155,7 +155,76 @@ nav {
 
 .items {
     width: 85%;
-    height: 100vh;
+    height: auto;
     margin: 20px auto;
-    border: 1px solid red;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    // padding-bottom: 50px;
+    // border: 1px solid red;
+    .containerItems {
+        margin: 40px 100px;
+        .divImage {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+            width: 300px;
+            height: 500px;
+            padding-top: 60px;
+            border: 2px solid transparent;
+            &:hover {
+                border: 2px solid $myColorBlack;
+            }
+            svg {
+                position: relative;
+                z-index: 9;
+                margin-bottom: -70px;
+                margin-right: -320px;
+                cursor: pointer;
+            }
+            .imgContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $myColorGrey;
+                width: 400px;
+                height: 400px;
+                position: relative;
+                z-index: 3;
+                margin-bottom: 20px;
+                &:hover {
+                    background-color: $myColorYelow;
+                }
+                img {
+                    width: 80%;
+                    height: auto;
+                }
+            }
+        }
+        h2 {
+            margin-bottom: 15px;
+        }
+        span {
+            margin-bottom: 15px;
+            font-size: 25px;
+            font-weight: 700;
+        }
+        button {
+            margin-bottom: 10px;
+            border: 1px solid $myColorBlack;
+            width: 90%;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: transparent;
+            &:hover {
+                background-color: $myColorYelow;
+                border: 1px solid transparent;
+            }
+        }
+    }
 }
