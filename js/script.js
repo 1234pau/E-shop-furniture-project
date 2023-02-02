@@ -270,11 +270,4 @@ function createCardCarusel(images, el1) {
 }
 createCardCarusel(IMAGES_CARUSEL, containerItemsCarusel)
 createCardCarusel(IMAGES_CARUSEL, containerItemsCaruselSales)
-
-// import expEl from "./mod.js"
-
-// expEl()
-const heart = document.querySelector(".heartHome")
-const color = localStorage.getItem("color")
-heart.style.color = color
-console.log(heart)
+    // import { cloneEl } from "./armchair";

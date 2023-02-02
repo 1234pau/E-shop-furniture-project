@@ -18,7 +18,6 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-top: 20px;
-  background-color: #fdfdfd;
 }
 nav .logoContainer {
   display: -webkit-box;

@@ -1,0 +1,8 @@
+// setTimeout(() => {
+//     const containerItems = [...document.querySelectorAll(".containerItems")].forEach((containerItem) => {
+//         const svg = document.querySelector(".heart")
+//         containerItem.addEventListener('click', () => {
+//             console.log(containerItem)
+//         })
+//     })
+// }, 1000)

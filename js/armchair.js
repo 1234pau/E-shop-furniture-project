@@ -28,11 +28,6 @@ switch (valuechanger) {
         containerChanger.style.backgroundImage = "url(/assets/sven-brandsma-GZ5cKOgeIB0-unsplash.jpg)"
 }
 
-
-// fetch("/products.json")
-// .then(response => response.json())
-// .then(json => console.log(json));
-
 async function products() {
     const response = await fetch("/products.json")
     const data = await response.json()
@@ -55,6 +50,7 @@ async function products() {
                 divImage.appendChild(imgContainer)
                     // image
                 const img = document.createElement("img")
+                img.classList.add("img")
                 img.src = item.imageURL
                 img.alt = "imageTumbnail"
                 img.width = "400px"
@@ -95,48 +91,43 @@ async function products() {
             break
         case "Wardrobes":
             forEachItem(data.wardrobes)
-            getItem(data.wardrobes)
+                // getItem(data.wardrobes)
             break
         case "Armchairs":
             forEachItem(data.armchairs)
-            getItem(data.armchairs)
+                // getItem(data.armchairs)
             break
 
     }
 }
 products()
-
-function getItem(objItem) {
-    setTimeout(() => {
-        for (let i of objItem) {
-            const containerItems = [...document.querySelectorAll(".containerItems")].forEach((containerItem) => {
-                containerItem.addEventListener('click', () => {
-                    console.log(containerItem)
-                })
-            })
-            break
-        }
-    }, 1000)
-}
-const heart = document.querySelector(".heartArmchair")
 const color = localStorage.getItem("color")
-heart.style.color = color
-    // setTimeout(() => {
-    //     const heart = [...document.querySelectorAll(".items div svg")].forEach(item => {
-    //         item.addEventListener('click', () => {
-    //             const value = localStorage.setItem("color", "red")
-    //                 // const getColor = localStorage.getItem("color")
+let cloneEl
 
-//             item.style.color = color
-
-//             console.log("click heart")
-//             console.log(item)
-
-//         })
-//     })
-// }, 1000)
-
-// console.log(heart)
-// import expEl from "./mod.js"
-
-// expEl()
+function getItem() {
+    setTimeout(() => {
+            const openDialog = document.querySelector(".openDialog")
+            const svg = [...document.querySelectorAll(".heart")].forEach((item) => {
+                const containerItems = [...document.querySelectorAll(".containerItems")]
+                for (let i = 0; i < containerItems.length; i++) {
+                    item.addEventListener('click', () => {
+                        const value = localStorage.setItem("color", "red")
+                        item.style.color = color
+                        if (containerItems[i].hasChildNodes(item)) {
+                            const element = item.parentElement
+                            cloneEl = element.cloneNode(true)
+                            openDialog.appendChild(cloneEl)
+                            localStorage.setItem("element", cloneEl)
+                                // console.log(element)
+                        } else {
+                            console.log(false)
+                        }
+                        console.log("clone", cloneEl)
+                    })
+                    break
+                }
+            })
+        },
+        1000)
+}
+getItem()
