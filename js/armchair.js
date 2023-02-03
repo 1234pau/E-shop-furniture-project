@@ -27,7 +27,8 @@ switch (valuechanger) {
     default:
         containerChanger.style.backgroundImage = "url(/assets/sven-brandsma-GZ5cKOgeIB0-unsplash.jpg)"
 }
-
+let childImgDiv
+let objIts = []
 async function products() {
     const response = await fetch("/products.json")
     const data = await response.json()
@@ -70,6 +71,14 @@ async function products() {
                 divImage.appendChild(button)
                     // all of this are attached to containerItemsCarusel
                 items.appendChild(containerItems)
+
+                if (tipeOfItem[item.imageURL] === childImgDiv) {
+                    // console.log(item)
+                    objIts.push(item)
+
+
+                }
+
             })
 
             // console.log(data.armchairs[0])
@@ -104,30 +113,89 @@ products()
 const color = localStorage.getItem("color")
 let cloneEl
 
+
+
 function getItem() {
     setTimeout(() => {
-            const openDialog = document.querySelector(".openDialog")
-            const svg = [...document.querySelectorAll(".heart")].forEach((item) => {
-                const containerItems = [...document.querySelectorAll(".containerItems")]
-                for (let i = 0; i < containerItems.length; i++) {
-                    item.addEventListener('click', () => {
-                        const value = localStorage.setItem("color", "red")
-                        item.style.color = color
-                        if (containerItems[i].hasChildNodes(item)) {
-                            const element = item.parentElement
-                            cloneEl = element.cloneNode(true)
-                            openDialog.appendChild(cloneEl)
-                            localStorage.setItem("element", cloneEl)
-                                // console.log(element)
-                        } else {
-                            console.log(false)
+        const openDialog = document.querySelector(".openDialog")
+            // const img = document.querySelector(".img")
+        const svg = [...document.querySelectorAll(".heart")].forEach((item) => {
+            const containerItems = [...document.querySelectorAll(".containerItems")]
+                // const img = [...document.querySelectorAll(".img")]
+            for (let i = 0; i < containerItems.length; i++) {
+                item.addEventListener('click', () => {
+                    const value = localStorage.setItem("color", "red")
+                    item.style.color = color
+                    if (containerItems[i].hasChildNodes(item)) {
+                        const element = item.parentElement
+                            // cloneEl = element.cloneNode(true)
+                            // openDialog.appendChild(cloneEl)
+
+                        // console.log("clone", cloneEl)
+
+                        const childrenImg = element.children[1].children[0]
+                        childImgDiv = childrenImg.getAttribute("src")
+                        console.log(childImgDiv)
+                            // console.log(objIts)
+                        for (let j = 0; j < objIts.length; j++) {
+                            if (objIts[j].hasOwnProperty("imageURL")) {
+                                if (objIts[j].imageURL == childImgDiv) {
+                                    // console.log(objIts[j].price)
+                                    // console.log(objIts[j].name)
+                                    // console.log(objIts[j].id)
+                                    // console.log(true)
+                                    const containerDivObj = document.createElement("div")
+                                    containerDivObj.classList.add("containerObj")
+                                        // container image
+                                    const containerImage = document.createElement("div")
+                                    containerImage.classList.add("containerImage")
+                                    containerDivObj.appendChild(containerImage)
+                                        // image
+                                    const img = document.createElement("img")
+                                    img.classList.add("imageObj")
+                                    img.src = objIts[j].imageURL
+                                    img.alt = "imageTumbnail"
+                                    img.width = "400px"
+                                    img.height = "400px"
+                                    containerImage.appendChild(img)
+
+                                    const containerDivText = document.createElement("div")
+                                    containerDivText.classList.add("containerDivText")
+                                        // h2 name
+                                    const h2 = document.createElement("h2")
+                                    h2.innerHTML = objIts[j].name
+                                    containerDivText.appendChild(h2)
+                                        // span price
+                                    const span = document.createElement("span")
+                                    span.innerHTML = objIts[j].price
+                                    containerDivText.appendChild(span)
+                                        // p
+                                    const article = document.createElement("article")
+                                    article.innerHTML = objIts[j].description
+                                    containerDivText.appendChild(article)
+                                        // button
+                                    const button = document.createElement("button")
+                                    button.innerHTML = objIts[j].textButton
+                                    containerDivText.appendChild(button)
+
+                                    containerDivObj.appendChild(containerDivText)
+                                    openDialog.appendChild(containerDivObj)
+                                    break
+                                }
+
+                            } else {
+                                console.log(false)
+                            }
                         }
-                        console.log("clone", cloneEl)
-                    })
-                    break
-                }
-            })
-        },
-        1000)
+                        return cloneEl
+                    } else {
+                        console.log(false)
+                    }
+                })
+                break
+            }
+        })
+    }, 1000)
 }
 getItem()
+    // console.log(cloneEl)
