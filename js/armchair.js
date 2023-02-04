@@ -118,7 +118,8 @@ let cloneEl
 function getItem() {
     setTimeout(() => {
         const openDialog = document.querySelector(".openDialog")
-            // const img = document.querySelector(".img")
+
+        // const img = document.querySelector(".img")
         const svg = [...document.querySelectorAll(".heart")].forEach((item) => {
             const containerItems = [...document.querySelectorAll(".containerItems")]
                 // const img = [...document.querySelectorAll(".img")]
@@ -128,22 +129,12 @@ function getItem() {
                     item.style.color = color
                     if (containerItems[i].hasChildNodes(item)) {
                         const element = item.parentElement
-                            // cloneEl = element.cloneNode(true)
-                            // openDialog.appendChild(cloneEl)
-
-                        // console.log("clone", cloneEl)
-
                         const childrenImg = element.children[1].children[0]
                         childImgDiv = childrenImg.getAttribute("src")
-                        console.log(childImgDiv)
-                            // console.log(objIts)
                         for (let j = 0; j < objIts.length; j++) {
                             if (objIts[j].hasOwnProperty("imageURL")) {
                                 if (objIts[j].imageURL == childImgDiv) {
-                                    // console.log(objIts[j].price)
-                                    // console.log(objIts[j].name)
-                                    // console.log(objIts[j].id)
-                                    // console.log(true)
+
                                     const containerDivObj = document.createElement("div")
                                     containerDivObj.classList.add("containerObj")
                                         // container image
@@ -175,17 +166,29 @@ function getItem() {
                                     containerDivText.appendChild(article)
                                         // button
                                     const button = document.createElement("button")
+                                    button.classList.add("addToCart")
                                     button.innerHTML = objIts[j].textButton
                                     containerDivText.appendChild(button)
 
                                     containerDivObj.appendChild(containerDivText)
                                     openDialog.appendChild(containerDivObj)
-                                    break
-                                }
 
-                            } else {
-                                console.log(false)
+                                    button.addEventListener("click", () => {
+                                        createItemCart(objIts[j].imageURL, objIts[j].name, objIts[j].price, objIts[j])
+                                    })
+
+                                    break
+                                } else {
+                                    console.log(false)
+                                }
                             }
+
+                            // if (openDialog.innerHTML(button).classList.contains("addToCart")) {
+
+                            //     // const addtoCart = document.querySelector(".addToCart")
+                            //     button.addEventListener("click", createItemCart(objIts[j].imageURL, objIts[j].name, objIts[j].price, objIts[j]))
+                            // }
+
                         }
                         return cloneEl
                     } else {
@@ -195,7 +198,41 @@ function getItem() {
                 break
             }
         })
+
     }, 1000)
 }
 getItem()
-    // console.log(cloneEl)
+const createItemCart = (image, nameItem, price, obj) => {
+    const containerDivObjCart = document.createElement("div")
+    containerDivObjCart.classList.add("containerObjCart")
+        // container image
+    const containerImageCart = document.createElement("div")
+    containerImageCart.classList.add("containerImageCart")
+    containerDivObjCart.appendChild(containerImageCart)
+        // image
+    const imgCart = document.createElement("img")
+    imgCart.classList.add("imageObjCart")
+    imgCart.src = image
+    imgCart.alt = "imageTumbnail"
+    imgCart.width = "400px"
+    imgCart.height = "400px"
+    containerImageCart.appendChild(imgCart)
+        // h2 name
+    const h2 = document.createElement("h2")
+    h2.innerHTML = nameItem
+    containerDivObjCart.appendChild(h2)
+        // span price
+    const span = document.createElement("span")
+    span.innerHTML = price
+    containerDivObjCart.appendChild(span)
+        // delete btn
+    const deleteBtn = document.createElement("deleteBtn")
+    deleteBtn.classList.add("deleteItem")
+    deleteBtn.innerHTML = "Delete"
+    containerDivObjCart.appendChild(deleteBtn)
+        // container
+    const openDialogCart = document.querySelector(".openDialogCart")
+    openDialogCart.appendChild(containerDivObjCart)
+    console.log(openDialogCart)
+    console.log(obj)
+}

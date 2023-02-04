@@ -7,6 +7,7 @@
 body {
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 nav {
@@ -102,10 +103,21 @@ nav {
     padding: 10px;
     background-color: $myColorWhite;
     position: absolute;
-    z-index: 99;
+    z-index: 3;
+    overflow-x: hidden;
     &::backdrop {
         background: rgb(0 0 0 / 0.7);
         opacity: 0.9;
+    }
+    .closeMod {
+        float: left;
+        position: fixed;
+        margin-left: -50px;
+        left: 1290px;
+        top: 10px;
+        z-index: 99;
+        cursor: pointer;
+        fill: $myColorWhite;
     }
     .containerObj {
         margin: 0 auto 10px;
@@ -155,6 +167,75 @@ nav {
                 font-weight: 500;
                 outline: none;
             }
+        }
+    }
+}
+
+.openDialogCart {
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    background-color: $myColorWhite;
+    position: absolute;
+    z-index: 3;
+    overflow-x: hidden;
+    &::backdrop {
+        background: rgb(0 0 0 / 0.7);
+        opacity: 0.9;
+    }
+    .closeModCart {
+        float: left;
+        position: fixed;
+        margin-left: -50px;
+        left: 1290px;
+        top: 10px;
+        z-index: 99;
+        cursor: pointer;
+        fill: $myColorWhite;
+    }
+    .containerObjCart {
+        margin: 0 auto 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 95%;
+        height: 300px;
+        padding: 10px;
+        background-color: rgba(241, 148, 94, 0.37);
+        border-radius: 3px;
+        .containerImageCart {
+            width: 35%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3px;
+            background-color: rgb(243, 249, 253);
+            .imageObjCart {
+                width: auto;
+                height: 95%;
+            }
+        }
+        h2 {
+            margin-bottom: 5px;
+        }
+        span {
+            font-size: 17px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+        .deleteItem {
+            border: none;
+            padding: 10px;
+            width: 200px;
+            background-color: $myColorYelow;
+            margin-top: 20px;
+            font-size: 17px;
+            font-weight: 500;
+            outline: none;
         }
     }
 }

@@ -7,20 +7,29 @@ fetch('/nav.html')
         oldelem.parentNode.replaceChild(newelem, oldelem);
     })
 
-
-
 setTimeout(() => {
     const color = localStorage.getItem("color")
     const heart = document.querySelector(".heartHome")
+    const cart = document.querySelector(".cart")
     const openDialog = document.querySelector(".openDialog")
+    const openDialogCart = document.querySelector(".openDialogCart")
+    const closeMod = document.querySelector(".closeMod")
+    const closeModCart = document.querySelector(".closeModCart")
     heart.style.color = color
 
     heart.addEventListener("click", () => {
         openDialog.showModal();
-        // console.log(cloneEl)
         console.log("click heart")
     })
-    openDialog.addEventListener("click", () => {
+    cart.addEventListener("click", () => {
+        openDialogCart.showModal();
+        console.log("click cart")
+    })
+    closeMod.addEventListener("click", () => {
         openDialog.close();
     })
+    closeModCart.addEventListener("click", () => {
+        openDialogCart.close();
+    })
+
 }, 1000)

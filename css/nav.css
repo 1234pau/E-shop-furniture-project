@@ -6,6 +6,7 @@
 body {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 nav {
@@ -139,7 +140,8 @@ nav .languagesForm select:focus {
   padding: 10px;
   background-color: #fdfdfd;
   position: absolute;
-  z-index: 99;
+  z-index: 3;
+  overflow-x: hidden;
 }
 .openDialog::-webkit-backdrop {
   background: rgba(0, 0, 0, 0.7);
@@ -148,6 +150,16 @@ nav .languagesForm select:focus {
 .openDialog::backdrop {
   background: rgba(0, 0, 0, 0.7);
   opacity: 0.9;
+}
+.openDialog .closeMod {
+  float: left;
+  position: fixed;
+  margin-left: -50px;
+  left: 1290px;
+  top: 10px;
+  z-index: 99;
+  cursor: pointer;
+  fill: #fdfdfd;
 }
 .openDialog .containerObj {
   margin: 0 auto 10px;
@@ -201,6 +213,90 @@ nav .languagesForm select:focus {
   padding-top: 15px;
 }
 .openDialog .containerObj .containerDivText button {
+  border: none;
+  padding: 10px;
+  width: 200px;
+  background-color: #f8d377;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  outline: none;
+}
+
+.openDialogCart {
+  margin: auto;
+  width: 80%;
+  height: 90%;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  background-color: #fdfdfd;
+  position: absolute;
+  z-index: 3;
+  overflow-x: hidden;
+}
+.openDialogCart::-webkit-backdrop {
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0.9;
+}
+.openDialogCart::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0.9;
+}
+.openDialogCart .closeModCart {
+  float: left;
+  position: fixed;
+  margin-left: -50px;
+  left: 1290px;
+  top: 10px;
+  z-index: 99;
+  cursor: pointer;
+  fill: #fdfdfd;
+}
+.openDialogCart .containerObjCart {
+  margin: 0 auto 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 95%;
+  height: 300px;
+  padding: 10px;
+  background-color: rgba(241, 148, 94, 0.37);
+  border-radius: 3px;
+}
+.openDialogCart .containerObjCart .containerImageCart {
+  width: 35%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3px;
+  background-color: rgb(243, 249, 253);
+}
+.openDialogCart .containerObjCart .containerImageCart .imageObjCart {
+  width: auto;
+  height: 95%;
+}
+.openDialogCart .containerObjCart h2 {
+  margin-bottom: 5px;
+}
+.openDialogCart .containerObjCart span {
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.openDialogCart .containerObjCart .deleteItem {
   border: none;
   padding: 10px;
   width: 200px;
