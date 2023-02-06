@@ -71,7 +71,9 @@ async function products() {
                 divImage.appendChild(button)
                     // all of this are attached to containerItemsCarusel
                 items.appendChild(containerItems)
-
+                button.addEventListener("click", () => {
+                    createItemCart(item.imageURL, item.name, item.price, item)
+                })
                 if (tipeOfItem[item.imageURL] === childImgDiv) {
                     // console.log(item)
                     objIts.push(item)
@@ -113,11 +115,19 @@ products()
 const color = localStorage.getItem("color")
 let cloneEl
 
-
+const openDialog = document.querySelector(".openDialog")
+window.onclick = function(event) {
+    if (event.target == openDialog) {
+        openDialog.style.display = "none";
+    }
+}
 
 function getItem() {
     setTimeout(() => {
         const openDialog = document.querySelector(".openDialog")
+        if (localStorage.getItem("itemHeart")) {
+            openDialog.innerHTML = localStorage.getItem("itemHeart")
+        }
 
         // const img = document.querySelector(".img")
         const svg = [...document.querySelectorAll(".heart")].forEach((item) => {
@@ -126,6 +136,7 @@ function getItem() {
             for (let i = 0; i < containerItems.length; i++) {
                 item.addEventListener('click', () => {
                     const value = localStorage.setItem("color", "red")
+
                     item.style.color = color
                     if (containerItems[i].hasChildNodes(item)) {
                         const element = item.parentElement
@@ -172,27 +183,19 @@ function getItem() {
 
                                     containerDivObj.appendChild(containerDivText)
                                     openDialog.appendChild(containerDivObj)
+                                    localStorage.setItem("itemHeart", openDialog.innerHTML)
 
                                     button.addEventListener("click", () => {
                                         createItemCart(objIts[j].imageURL, objIts[j].name, objIts[j].price, objIts[j])
+                                            // localStorage.setItem('itemCartMod', openDialog.innerHTML);
+                                            // console.log("add")
                                     })
 
                                     break
-                                } else {
-                                    console.log(false)
                                 }
+
                             }
-
-                            // if (openDialog.innerHTML(button).classList.contains("addToCart")) {
-
-                            //     // const addtoCart = document.querySelector(".addToCart")
-                            //     button.addEventListener("click", createItemCart(objIts[j].imageURL, objIts[j].name, objIts[j].price, objIts[j]))
-                            // }
-
                         }
-                        return cloneEl
-                    } else {
-                        console.log(false)
                     }
                 })
                 break
@@ -233,6 +236,7 @@ const createItemCart = (image, nameItem, price, obj) => {
         // container
     const openDialogCart = document.querySelector(".openDialogCart")
     openDialogCart.appendChild(containerDivObjCart)
-    console.log(openDialogCart)
-    console.log(obj)
+        // console.log(openDialogCart)
+        // console.log(obj)
+    localStorage.setItem('itemCart', openDialogCart.innerHTML);
 }
