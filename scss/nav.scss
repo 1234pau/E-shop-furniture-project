@@ -115,7 +115,7 @@ nav {
         margin-left: -50px;
         left: 1290px;
         top: 10px;
-        z-index: 99;
+        z-index: 1000;
         cursor: pointer;
         fill: $myColorWhite;
     }
@@ -166,6 +166,7 @@ nav {
                 font-size: 17px;
                 font-weight: 500;
                 outline: none;
+                cursor: pointer;
             }
         }
     }

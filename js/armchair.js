@@ -73,7 +73,9 @@ async function products() {
                 items.appendChild(containerItems)
                 button.addEventListener("click", () => {
                     createItemCart(item.imageURL, item.name, item.price, item)
+                    console.log("adddddddddddddddd")
                 })
+
                 if (tipeOfItem[item.imageURL] === childImgDiv) {
                     // console.log(item)
                     objIts.push(item)
@@ -115,18 +117,22 @@ products()
 const color = localStorage.getItem("color")
 let cloneEl
 
-const openDialog = document.querySelector(".openDialog")
-window.onclick = function(event) {
-    if (event.target == openDialog) {
-        openDialog.style.display = "none";
-    }
-}
+// const openDialog = document.querySelector(".openDialog")
+// window.onclick = function(event) {
+//     if (event.target == openDialog) {
+//         openDialog.style.display = "none";
+//     }
+// }
+const arr = []
 
 function getItem() {
     setTimeout(() => {
-        const openDialog = document.querySelector(".openDialog")
+        // const openDialog = document.querySelector(".openDialog")
+        const containerOpenDialog = document.querySelector(".containerOpenDialog")
+        const containerOpenDialogCart = document.querySelector(".containerOpenDialogCart")
+            // console.log(containerOpenDialog)
         if (localStorage.getItem("itemHeart")) {
-            openDialog.innerHTML = localStorage.getItem("itemHeart")
+            containerOpenDialog.innerHTML = JSON.parse(localStorage.getItem("itemHeart"))
         }
 
         // const img = document.querySelector(".img")
@@ -134,7 +140,8 @@ function getItem() {
             const containerItems = [...document.querySelectorAll(".containerItems")]
                 // const img = [...document.querySelectorAll(".img")]
             for (let i = 0; i < containerItems.length; i++) {
-                item.addEventListener('click', () => {
+                item.addEventListener('click', (e) => {
+                    e.stopPropagation()
                     const value = localStorage.setItem("color", "red")
 
                     item.style.color = color
@@ -178,34 +185,51 @@ function getItem() {
                                         // button
                                     const button = document.createElement("button")
                                     button.classList.add("addToCart")
-                                    button.innerHTML = objIts[j].textButton
+                                    button.id = "idaddToCart"
+                                    button.innerText = objIts[j].textButton
+
                                     containerDivText.appendChild(button)
+                                    button.onclick = set()
 
                                     containerDivObj.appendChild(containerDivText)
-                                    openDialog.appendChild(containerDivObj)
-                                    localStorage.setItem("itemHeart", openDialog.innerHTML)
+                                    containerOpenDialog.appendChild(containerDivObj)
 
-                                    button.addEventListener("click", () => {
-                                        createItemCart(objIts[j].imageURL, objIts[j].name, objIts[j].price, objIts[j])
-                                            // localStorage.setItem('itemCartMod', openDialog.innerHTML);
-                                            // console.log("add")
-                                    })
+                                    function set() {
+                                        console.log("cineva")
+                                    }
+                                    // document.addEventListener('click', function(event) {
+                                    //     const containerOpenDialogCart = document.querySelector(".containerOpenDialogCart")
+                                    //     if (event.target.id == 'idaddToCart') {
+                                    //         console.log("add123");
+                                    //         // console.log(arr)
+                                    //         createItemCart(objIts[j].imageURL, objIts[j].name, objIts[j].price)
+                                    //     };
+                                    // });
+
+                                    localStorage.setItem("itemHeart", JSON.stringify(containerOpenDialog.innerHTML))
 
                                     break
                                 }
 
                             }
+
                         }
                     }
-                })
+
+                }, true)
                 break
             }
         })
-
     }, 1000)
 }
 getItem()
+
 const createItemCart = (image, nameItem, price, obj) => {
+    const containerOpenDialogCart = document.querySelector(".containerOpenDialogCart")
+    if (localStorage.getItem("itemCart")) {
+        containerOpenDialogCart.innerHTML = JSON.parse(localStorage.getItem("itemCart"))
+    }
+
     const containerDivObjCart = document.createElement("div")
     containerDivObjCart.classList.add("containerObjCart")
         // container image
@@ -234,9 +258,9 @@ const createItemCart = (image, nameItem, price, obj) => {
     deleteBtn.innerHTML = "Delete"
     containerDivObjCart.appendChild(deleteBtn)
         // container
-    const openDialogCart = document.querySelector(".openDialogCart")
-    openDialogCart.appendChild(containerDivObjCart)
+        // const openDialogCart = document.querySelector(".openDialogCart")
+    containerOpenDialogCart.appendChild(containerDivObjCart)
         // console.log(openDialogCart)
         // console.log(obj)
-    localStorage.setItem('itemCart', openDialogCart.innerHTML);
+    localStorage.setItem("itemCart", JSON.stringify(containerOpenDialogCart.innerHTML))
 }

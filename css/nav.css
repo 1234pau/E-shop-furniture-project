@@ -157,7 +157,7 @@ nav .languagesForm select:focus {
   margin-left: -50px;
   left: 1290px;
   top: 10px;
-  z-index: 99;
+  z-index: 1000;
   cursor: pointer;
   fill: #fdfdfd;
 }
@@ -221,6 +221,7 @@ nav .languagesForm select:focus {
   font-size: 17px;
   font-weight: 500;
   outline: none;
+  cursor: pointer;
 }
 
 .openDialogCart {
