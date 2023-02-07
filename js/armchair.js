@@ -184,7 +184,7 @@ function getItem() {
                                     containerDivText.appendChild(article)
                                         // button
                                     const button = document.createElement("button")
-                                    button.classList.add("addToCart")
+                                    button.classList.add("addToCart") // ⭕⭕⭕
                                     button.id = "idaddToCart"
                                     button.innerText = objIts[j].textButton
 
