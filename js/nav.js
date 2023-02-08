@@ -43,11 +43,8 @@ setTimeout(() => {
         console.log("click cart")
     })
     closeModCart.addEventListener("click", () => {
-            openDialogCart.close();
-            console.log("closeCart")
-        })
-        // console.log(heart)
-        // console.log(closeMod)
-        // console.log(closeModCart)
+        openDialogCart.close();
+        console.log("closeCart")
+    })
 
 }, 1000)
