@@ -134,8 +134,6 @@ function getItem() {
         if (localStorage.getItem("itemHeart")) {
             containerOpenDialog.innerHTML = JSON.parse(localStorage.getItem("itemHeart"))
         }
-
-        // const img = document.querySelector(".img")
         const svg = [...document.querySelectorAll(".heart")].forEach((item) => {
             const containerItems = [...document.querySelectorAll(".containerItems")]
                 // const img = [...document.querySelectorAll(".img")]
@@ -185,50 +183,52 @@ function getItem() {
                                         // button
                                     const button = document.createElement("button")
                                     button.classList.add("addToCart") // ⭕⭕⭕
-                                    button.id = "idaddToCart"
+                                    button.id = "addToCart"
                                     button.innerText = objIts[j].textButton
 
                                     containerDivText.appendChild(button)
-                                    button.onclick = set()
 
                                     containerDivObj.appendChild(containerDivText)
                                     containerOpenDialog.appendChild(containerDivObj)
 
-                                    function set() {
-                                        console.log("cineva")
-                                    }
-                                    // document.addEventListener('click', function(event) {
-                                    //     const containerOpenDialogCart = document.querySelector(".containerOpenDialogCart")
-                                    //     if (event.target.id == 'idaddToCart') {
-                                    //         console.log("add123");
-                                    //         // console.log(arr)
-                                    //         createItemCart(objIts[j].imageURL, objIts[j].name, objIts[j].price)
-                                    //     };
-                                    // });
-
                                     localStorage.setItem("itemHeart", JSON.stringify(containerOpenDialog.innerHTML))
 
+                                    // document.addEventListener('click', function(event) {
+                                    //     // const containerOpenDialogCart = document.querySelector(".containerOpenDialogCart")
+                                    //     if (event.target.id == 'addToCart') {
+                                    //         event.stopPropagation()
+                                    //             // createItemCart(objIts[j].imageURL, objIts[j].name, objIts[j].price)
+                                    //             // localStorage.setItem("itemCart", JSON.stringify(containerOpenDialogCart.innerHTML))
+                                    //         console.log("ddd")
+                                    //     }
+
+                                    // })
                                     break
                                 }
-
                             }
 
                         }
                     }
 
-                }, true)
+                })
                 break
             }
         })
     }, 1000)
 }
 getItem()
+document.addEventListener('click', function(event) {
+    // const containerOpenDialogCart = document.querySelector(".containerOpenDialogCart")
+    if (event.target.id == 'addToCart') {
+        event.stopPropagation()
+            // createItemCart(objIts[j].imageURL, objIts[j].name, objIts[j].price)
+            // localStorage.setItem("itemCart", JSON.stringify(containerOpenDialogCart.innerHTML))
+        console.log("ddd")
+    }
 
+})
 const createItemCart = (image, nameItem, price, obj) => {
     const containerOpenDialogCart = document.querySelector(".containerOpenDialogCart")
-    if (localStorage.getItem("itemCart")) {
-        containerOpenDialogCart.innerHTML = JSON.parse(localStorage.getItem("itemCart"))
-    }
 
     const containerDivObjCart = document.createElement("div")
     containerDivObjCart.classList.add("containerObjCart")
@@ -260,7 +260,6 @@ const createItemCart = (image, nameItem, price, obj) => {
         // container
         // const openDialogCart = document.querySelector(".openDialogCart")
     containerOpenDialogCart.appendChild(containerDivObjCart)
-        // console.log(openDialogCart)
-        // console.log(obj)
+
     localStorage.setItem("itemCart", JSON.stringify(containerOpenDialogCart.innerHTML))
 }
