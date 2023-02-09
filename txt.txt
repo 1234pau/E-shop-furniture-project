@@ -6,3 +6,22 @@
 //         })
 //     })
 // }, 1000)
+
+async function getItemFromObj() {
+            const response = await fetch("/products.json")
+            const data = await response.json()
+                // console.log(data)
+            const { armchairs, beds, chairs, sofas, tables, wardrobes } = data
+            const forEachItem = () => {
+
+                const res = { armchairs, beds, chairs, sofas, tables, wardrobes }.forEach((item) => {
+                    if ((categories[item.imageURL]) === srcImage) {
+                        // console.log(item)
+                        objIts2.push(item)
+                        console.log(objIts2)
+                    }
+                })
+            }
+            forEachItem()
+        }
+        getItemFromObj()

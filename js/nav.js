@@ -18,9 +18,6 @@ setTimeout(() => {
     const containerOpenDialog = document.querySelector(".containerOpenDialog")
         // const but = document.querySelector(".addToCart")
     const containerOpenDialogCart = document.querySelector(".containerOpenDialogCart")
-        // console.log(containerOpenDialogCart)
-        // console.log(closeMod)
-        // console.log(but)
     heart.style.color = color
 
 

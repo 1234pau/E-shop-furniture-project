@@ -191,17 +191,18 @@ nav {
                 align-items: center;
                 justify-content: center;
                 background-color: $myColorGrey;
-                width: 300px;
-                height: 300px;
+                width: 115%;
+                height: 400px;
                 position: relative;
                 z-index: 3;
                 margin-bottom: 20px;
+                padding: 10px;
                 &:hover {
                     background-color: $myColorYelow;
                 }
                 img {
                     width: 65%;
-                    height: auto;
+                    min-height: 90%;
                 }
             }
         }
