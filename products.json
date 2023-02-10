@@ -3,7 +3,7 @@
             "id": 1,
             "imageURL": "/assets/armchairs/pngwing.com (14).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$50",
+            "price": 50,
             "name": "Orange",
             "textButton": "Add to cart"
 
@@ -12,7 +12,7 @@
             "id": 2,
             "imageURL": "/assets/armchairs/pngwing.com (15).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$65",
+            "price": 65,
             "name": "Bolete",
             "textButton": "Add to cart"
         },
@@ -20,7 +20,7 @@
             "id": 3,
             "imageURL": "/assets/armchairs/pngwing.com (17).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$45",
+            "price": 45,
             "name": "Modern",
             "textButton": "Add to cart"
         },
@@ -28,7 +28,7 @@
             "id": 4,
             "imageURL": "/assets/armchairs/pngwing.com (18).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$55",
+            "price": 55,
             "name": "Lazuli",
             "textButton": "Add to cart"
         },
@@ -36,7 +36,7 @@
             "id": 5,
             "imageURL": "/assets/armchairs/pngwing.com.png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$37",
+            "price": 37,
             "name": "Suplu",
             "textButton": "Add to cart"
         },
@@ -44,7 +44,7 @@
             "id": 6,
             "imageURL": "/assets/armchairs/pngwing.com(1).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$28",
+            "price": 28,
             "name": "Family",
             "textButton": "Add to cart"
         },
@@ -52,7 +52,7 @@
             "id": 7,
             "imageURL": "/assets/armchairs/pngwing.com(2).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$77",
+            "price": 77,
             "name": "Lazarus",
             "textButton": "Add to cart"
         },
@@ -60,7 +60,7 @@
             "id": 8,
             "imageURL": "/assets/armchairs/pngwing.com(3).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$120",
+            "price": 120,
             "name": "Moka",
             "textButton": "Add to cart"
         },
@@ -68,7 +68,7 @@
             "id": 9,
             "imageURL": "/assets/armchairs/pngwing.com(4).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$99",
+            "price": 99,
             "name": "Menage",
             "textButton": "Add to cart"
         }
@@ -77,7 +77,7 @@
             "id": 1,
             "imageURL": "/assets/beds/pngwing.com(9).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$350",
+            "price": 350,
             "name": "Casalo Bleo",
             "textButton": "Add to cart"
         },
@@ -85,7 +85,7 @@
             "id": 2,
             "imageURL": "/assets/beds/pngwing.com (19).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$700",
+            "price": 700,
             "name": "Brise",
             "textButton": "Add to cart"
         },
@@ -93,7 +93,7 @@
             "id": 3,
             "imageURL": "/assets/beds/pngwing.com (20).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$560",
+            "price": 560,
             "name": "Medio",
             "textButton": "Add to cart"
         },
@@ -101,7 +101,7 @@
             "id": 4,
             "imageURL": "/assets/beds/pngwing.com (21).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$300",
+            "price": 300,
             "name": "Ariela",
             "textButton": "Add to cart"
         },
@@ -109,7 +109,7 @@
             "id": 5,
             "imageURL": "/assets/beds/pngwing.com (22).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$789",
+            "price": 789,
             "name": "Gala",
             "textButton": "Add to cart"
         },
@@ -117,7 +117,7 @@
             "id": 6,
             "imageURL": "/assets/beds/pngwing.com (23).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$500",
+            "price": 500,
             "name": "Capuciny",
             "textButton": "Add to cart"
         },
@@ -125,7 +125,7 @@
             "id": 7,
             "imageURL": "/assets/beds/pngwing.com (24).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$230",
+            "price": 230,
             "name": "Cocosa",
             "textButton": "Add to cart"
         },
@@ -133,7 +133,7 @@
             "id": 8,
             "imageURL": "/assets/beds/pngwing.com (25).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$677",
+            "price": 677,
             "name": "Blue Sky",
             "textButton": "Add to cart"
         },
@@ -141,7 +141,7 @@
             "id": 9,
             "imageURL": "/assets/beds/pngwing.com (26).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$235",
+            "price": 235,
             "name": "Napy",
             "textButton": "Add to cart"
         }
@@ -150,7 +150,7 @@
             "id": 1,
             "imageURL": "/assets/chairs/pngwing.com (27).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$39",
+            "price": 39,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -158,7 +158,7 @@
             "id": 2,
             "imageURL": "/assets/chairs/pngwing.com (60).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$33",
+            "price": 33,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -166,7 +166,7 @@
             "id": 3,
             "imageURL": "/assets/chairs/pngwing.com (29).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$43",
+            "price": 43,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -174,7 +174,7 @@
             "id": 4,
             "imageURL": "/assets/chairs/pngwing.com (30).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$49",
+            "price": 49,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -182,7 +182,7 @@
             "id": 5,
             "imageURL": "/assets/chairs/pngwing.com (61).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$58",
+            "price": 58,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -190,7 +190,7 @@
             "id": 6,
             "imageURL": "/assets/chairs/pngwing.com (62).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$29",
+            "price": 29,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -198,7 +198,7 @@
             "id": 7,
             "imageURL": "/assets/chairs/pngwing.com (33).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$74",
+            "price": 74,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -206,7 +206,7 @@
             "id": 8,
             "imageURL": "/assets/chairs/pngwing.com (34).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$45",
+            "price": 45,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -214,7 +214,7 @@
             "id": 9,
             "imageURL": "/assets/chairs/pngwing.com(6).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$76",
+            "price": 76,
             "name": "Lorem",
             "textButton": "Add to cart"
         }
@@ -223,7 +223,7 @@
             "id": 1,
             "imageURL": "/assets/sofas/pngwing.com (35).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$349",
+            "price": 349,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -231,7 +231,7 @@
             "id": 2,
             "imageURL": "/assets/sofas/pngwing.com (36).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$290",
+            "price": 290,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -239,7 +239,7 @@
             "id": 3,
             "imageURL": "/assets/sofas/pngwing.com (37).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$400",
+            "price": 400,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -247,7 +247,7 @@
             "id": 4,
             "imageURL": "/assets/sofas/pngwing.com (38).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$390",
+            "price": 390,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -255,7 +255,7 @@
             "id": 5,
             "imageURL": "/assets/sofas/pngwing.com (39).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$590",
+            "price": 590,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -263,7 +263,7 @@
             "id": 6,
             "imageURL": "/assets/sofas/pngwing.com (40).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$450",
+            "price": 450,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -271,7 +271,7 @@
             "id": 7,
             "imageURL": "/assets/sofas/pngwing.com (41).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$379",
+            "price": 379,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -279,7 +279,7 @@
             "id": 8,
             "imageURL": "/assets/sofas/pngwing.com (42).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$769",
+            "price": 769,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -287,7 +287,7 @@
             "id": 9,
             "imageURL": "/assets/sofas/pngwing.com(5).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$267",
+            "price": 267,
             "name": "Lorem",
             "textButton": "Add to cart"
         }
@@ -296,7 +296,7 @@
             "id": 1,
             "imageURL": "/assets/tables/pngwing.com (43).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$123",
+            "price": 123,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -304,7 +304,7 @@
             "id": 2,
             "imageURL": "/assets/tables/pngwing.com (44).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$150",
+            "price": 150,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -312,7 +312,7 @@
             "id": 3,
             "imageURL": "/assets/tables/pngwing.com (45).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$99",
+            "price": 99,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -320,7 +320,7 @@
             "id": 4,
             "imageURL": "/assets/tables/pngwing.com (46).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$100",
+            "price": 100,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -328,7 +328,7 @@
             "id": 5,
             "imageURL": "/assets/tables/pngwing.com (47).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$79",
+            "price": 79,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -336,7 +336,7 @@
             "id": 6,
             "imageURL": "/assets/tables/pngwing.com (48).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$99",
+            "price": 99,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -344,7 +344,7 @@
             "id": 7,
             "imageURL": "/assets/tables/pngwing.com (49).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$90",
+            "price": 90,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -352,7 +352,7 @@
             "id": 8,
             "imageURL": "/assets/tables/pngwing.com (50).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$178",
+            "price": 178,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -360,7 +360,7 @@
             "id": 9,
             "imageURL": "/assets/tables/pngwing.com(10).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$120",
+            "price": 120,
             "name": "Lorem",
             "textButton": "Add to cart"
         }
@@ -369,7 +369,7 @@
             "id": 1,
             "imageURL": "/assets/wardrobes/pngwing.com (11).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$230",
+            "price": 230,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -377,7 +377,7 @@
             "id": 2,
             "imageURL": "/assets/wardrobes/pngwing.com (51).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$125",
+            "price": 125,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -385,7 +385,7 @@
             "id": 3,
             "imageURL": "/assets/wardrobes/pngwing.com (52).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$200",
+            "price": 200,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -393,7 +393,7 @@
             "id": 4,
             "imageURL": "/assets/wardrobes/pngwing.com (53).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$150",
+            "price": 150,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -401,7 +401,7 @@
             "id": 5,
             "imageURL": "/assets/wardrobes/pngwing.com (59).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$250",
+            "price": 250,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -409,7 +409,7 @@
             "id": 6,
             "imageURL": "/assets/wardrobes/pngwing.com (55).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$178",
+            "price": 178,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -417,7 +417,7 @@
             "id": 7,
             "imageURL": "/assets/wardrobes/pngwing.com (56).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$190",
+            "price": 190,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -425,7 +425,7 @@
             "id": 8,
             "imageURL": "/assets/wardrobes/pngwing.com (57).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$238",
+            "price": 238,
             "name": "Lorem",
             "textButton": "Add to cart"
         },
@@ -433,7 +433,7 @@
             "id": 9,
             "imageURL": "/assets/wardrobes/pngwing.com (58).png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat sapiente perferendis alias sint perspiciatis ducimus blanditiis voluptatum, nulla ea illo? Sed sapiente ullam veritatis aliquam illum ipsam amet nihil porro iste, hic, impedit adipisci, atque modi repellat soluta fugiat sequi nostrum?",
-            "price": "$178",
+            "price": 178,
             "name": "Lorem",
             "textButton": "Add to cart"
         }

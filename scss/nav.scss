@@ -187,6 +187,32 @@ nav {
         background: rgb(0 0 0 / 0.7);
         opacity: 0.9;
     }
+    .total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 78%;
+        height: 70px;
+        position: fixed;
+        background-color: $myColorWhite;
+        margin-top: -10px;
+        span {
+            font-size: 18px;
+        }
+        .checkout {
+            border: none;
+            padding: 10px;
+            width: 200px;
+            background-color: $myColorYelow;
+            font-size: 19px;
+            font-weight: 600;
+            outline: none;
+            text-align: center;
+        }
+    }
+    .containerOpenDialogCart {
+        margin-top: 70px;
+    }
     .closeModCart {
         float: left;
         position: fixed;
@@ -203,13 +229,13 @@ nav {
         align-items: center;
         justify-content: space-around;
         width: 95%;
-        height: 300px;
+        height: 200px;
         padding: 10px;
         background-color: rgba(241, 148, 94, 0.37);
         border-radius: 3px;
         .containerImageCart {
-            width: 35%;
-            height: 70%;
+            width: 30%;
+            height: 90%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -224,19 +250,18 @@ nav {
             margin-bottom: 5px;
         }
         span {
-            font-size: 17px;
-            font-weight: 700;
-            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 800;
         }
         .deleteItem {
             border: none;
             padding: 10px;
             width: 200px;
             background-color: $myColorYelow;
-            margin-top: 20px;
-            font-size: 17px;
-            font-weight: 500;
+            font-size: 19px;
+            font-weight: 600;
             outline: none;
+            text-align: center;
         }
     }
 }

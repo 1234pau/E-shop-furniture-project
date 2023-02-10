@@ -1,6 +1,8 @@
 const containerChanger = document.querySelector(".armchairImage")
 const changer = document.querySelector(".armchairImage h1")
 const items = document.querySelector(".items")
+    // calculate the total price
+const prices = []
 
 const valuechanger = changer.innerHTML
     // console.log(valuechanger)
@@ -66,7 +68,7 @@ async function products() {
             divImage.appendChild(h2)
                 // span
             const span = document.createElement("span")
-            span.innerText = item.price
+            span.innerText = `$${item.price}`
             divImage.appendChild(span)
                 // button
             const button = document.createElement("button")
@@ -77,6 +79,7 @@ async function products() {
             button.addEventListener("click", () => {
                 createItemCart(item.imageURL, item.name, item.price, item)
                 console.log("adddddddddddddddd")
+
             })
 
             if (tipeOfItem[item.imageURL] === childImgDiv) { // push the object in array
@@ -166,7 +169,7 @@ function getItem() {
                                     containerDivText.appendChild(h2)
                                         // span price
                                     const span = document.createElement("span")
-                                    span.innerHTML = objIts[j].price
+                                    span.innerHTML = `$${objIts[j].price}`
                                     containerDivText.appendChild(span)
                                         // p element
                                     const article = document.createElement("article")
@@ -182,6 +185,7 @@ function getItem() {
 
                                     containerDivObj.appendChild(containerDivText)
                                     containerOpenDialog.appendChild(containerDivObj)
+
 
                                     localStorage.setItem("itemHeart", JSON.stringify(containerOpenDialog.innerHTML))
 
@@ -201,10 +205,14 @@ function getItem() {
 
 getItem()
     // create the items for cart when press "Add to cart" in favorites modal
+
 let srcImage
 let objIts2 = []
 document.addEventListener('click', function(event) {
-        // target the Add to cart buttom
+        const quantity = document.querySelector(".quantity")
+        const amount = document.querySelector(".amount")
+        console.log(quantity)
+            // target the Add to cart buttom
         if (event.target.id == 'addToCart') {
             event.stopPropagation()
                 // target the parent of the parent button witch is containerObj
@@ -214,8 +222,17 @@ document.addEventListener('click', function(event) {
             srcImage = childrenImg.getAttribute("src") // source image el
             const nameEl = parent.children[1].children[0] // h2 element
             const priceEl = parent.children[1].children[1] // span element
+            const z = priceEl.innerHTML
+            const x = Number(z.slice(1, z.length))
 
-            createItemCart(srcImage, nameEl.innerText, priceEl.innerText)
+            createItemCart(srcImage, nameEl.innerText, x)
+            quantity.innerHTML = prices.length
+            const result = prices.reduce((total, num) => {
+                return total + num
+            }, 0)
+            amount.innerHTML = result
+            console.log(prices)
+
         }
     })
     // create cart items when you pres any Add to cart button
@@ -244,7 +261,7 @@ const createItemCart = (image, nameItem, price, obj) => {
     containerDivObjCart.appendChild(h2)
         // span price
     const span = document.createElement("span")
-    span.innerHTML = price
+    span.innerHTML = `$${price}`
     containerDivObjCart.appendChild(span)
         // delete btn
     const deleteBtn = document.createElement("deleteBtn")
@@ -253,6 +270,7 @@ const createItemCart = (image, nameItem, price, obj) => {
     containerDivObjCart.appendChild(deleteBtn)
         // container
     containerOpenDialogCart.appendChild(containerDivObjCart)
+    prices.push(price)
 
     // save in local storage
     localStorage.setItem("itemCart", JSON.stringify(containerOpenDialogCart.innerHTML))

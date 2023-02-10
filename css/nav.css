@@ -244,6 +244,38 @@ nav .languagesForm select:focus {
   background: rgba(0, 0, 0, 0.7);
   opacity: 0.9;
 }
+.openDialogCart .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 78%;
+  height: 70px;
+  position: fixed;
+  background-color: #fdfdfd;
+  margin-top: -10px;
+}
+.openDialogCart .total span {
+  font-size: 18px;
+}
+.openDialogCart .total .checkout {
+  border: none;
+  padding: 10px;
+  width: 200px;
+  background-color: #f8d377;
+  font-size: 19px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+}
+.openDialogCart .containerOpenDialogCart {
+  margin-top: 70px;
+}
 .openDialogCart .closeModCart {
   float: left;
   position: fixed;
@@ -265,14 +297,14 @@ nav .languagesForm select:focus {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 95%;
-  height: 300px;
+  height: 200px;
   padding: 10px;
   background-color: rgba(241, 148, 94, 0.37);
   border-radius: 3px;
 }
 .openDialogCart .containerObjCart .containerImageCart {
-  width: 35%;
-  height: 70%;
+  width: 30%;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,17 +325,16 @@ nav .languagesForm select:focus {
   margin-bottom: 5px;
 }
 .openDialogCart .containerObjCart span {
-  font-size: 17px;
-  font-weight: 700;
-  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 800;
 }
 .openDialogCart .containerObjCart .deleteItem {
   border: none;
   padding: 10px;
   width: 200px;
   background-color: #f8d377;
-  margin-top: 20px;
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 19px;
+  font-weight: 600;
   outline: none;
+  text-align: center;
 }
