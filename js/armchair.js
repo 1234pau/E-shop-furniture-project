@@ -1,12 +1,17 @@
 const containerChanger = document.querySelector(".armchairImage")
 const changer = document.querySelector(".armchairImage h1")
 const items = document.querySelector(".items")
-    // calculate the total price
+const containerOpenDialogCart = document.querySelector(".containerOpenDialogCart")
+const cartNotification = document.querySelector(".cartNotification")
+
+const containerOpenDialog = document.querySelector(".containerOpenDialog")
+const heartNotification = document.querySelector(".heartNotification")
+
+// calculate the total price
 const prices = []
 
 const valuechanger = changer.innerHTML
-    // console.log(valuechanger)
-    // console.log(containerChanger)
+
 switch (valuechanger) {
     case "Chairs":
         containerChanger.style.backgroundImage = "url(/assets/r-architecture-TRCJ-87Yoh0-unsplash.jpg)"
@@ -32,9 +37,8 @@ switch (valuechanger) {
 let childImgDiv
 let objIts = []
 
-
-
 async function products() {
+
     const response = await fetch("/products.json")
     const data = await response.json()
     const forEachItem = (tipeOfItem) => {
@@ -77,9 +81,11 @@ async function products() {
                 // all of this are attached to containerItemsCarusel
             items.appendChild(containerItems)
             button.addEventListener("click", () => {
+                const containerOpenDialogCart = document.querySelector(".containerOpenDialogCart")
+                const cartNotification = document.querySelector(".cartNotification")
                 createItemCart(item.imageURL, item.name, item.price, item)
-                console.log("adddddddddddddddd")
-
+                console.log("add to cart from items")
+                checkLengthItemsInModals(containerOpenDialogCart, cartNotification)
             })
 
             if (tipeOfItem[item.imageURL] === childImgDiv) { // push the object in array
@@ -87,8 +93,6 @@ async function products() {
             }
 
         })
-
-        // console.log(data.armchairs[0])
     }
 
     switch (valuechanger) {
@@ -123,95 +127,114 @@ let cloneEl
 function getItem() {
     setTimeout(() => {
         const containerOpenDialog = document.querySelector(".containerOpenDialog")
+        const heartNotification = document.querySelector(".heartNotification")
         const containerOpenDialogCart = document.querySelector(".containerOpenDialogCart")
-            // if local storage has already items in, add the new one
+        const cartNotification = document.querySelector(".cartNotification")
+
+        // if local storage has already items in, add the new one
         if (localStorage.getItem("itemHeart")) {
             containerOpenDialog.innerHTML = JSON.parse(localStorage.getItem("itemHeart"))
         }
         // get the heart from item
         const svg = [...document.querySelectorAll(".heart")].forEach((item) => {
-            // get each item from main.items and loop through it
-            const containerItems = [...document.querySelectorAll(".containerItems")]
-            for (let i = 0; i < containerItems.length; i++) {
-                // click on heart element
-                item.addEventListener('click', (e) => {
-                    e.stopPropagation()
-                    const value = localStorage.setItem("color", "red")
-                    item.style.color = color
-                        // when an container item has a heart el get divImage and the image itself (children[0])
-                    if (containerItems[i].hasChildNodes(item)) {
-                        const element = item.parentElement
-                        const childrenImg = element.children[1].children[0]
-                        childImgDiv = childrenImg.getAttribute("src") // get the source of image
-                        for (let j = 0; j < objIts.length; j++) {
-                            if (objIts[j].hasOwnProperty("imageURL")) { // if json has a property imageURL 
-                                if (objIts[j].imageURL == childImgDiv) { // and if it is metch with childImgDiv create the element from favorites modal
-                                    const containerDivObj = document.createElement("div")
-                                    containerDivObj.classList.add("containerObj")
-                                        // container image
-                                    const containerImage = document.createElement("div")
-                                    containerImage.classList.add("containerImage")
-                                    containerDivObj.appendChild(containerImage)
-                                        // image
-                                    const img = document.createElement("img")
-                                    img.classList.add("imageObj")
-                                    img.src = objIts[j].imageURL
-                                    img.alt = "imageTumbnail"
-                                    img.width = "400px"
-                                    img.height = "400px"
-                                    containerImage.appendChild(img)
+                // get each item from main.items and loop through it
+                const containerItems = [...document.querySelectorAll(".containerItems")]
+                for (let i = 0; i < containerItems.length; i++) {
+                    // click on heart element
+                    item.addEventListener('click', (e) => {
+                        e.stopPropagation()
+                        const value = localStorage.setItem("color", "red")
+                        item.style.color = color
+                            // when an container item has a heart el get divImage and the image itself (children[0])
+                        if (containerItems[i].hasChildNodes(item)) {
+                            const element = item.parentElement
+                            const childrenImg = element.children[1].children[0]
+                            childImgDiv = childrenImg.getAttribute("src") // get the source of image
+                            for (let j = 0; j < objIts.length; j++) {
+                                if (objIts[j].hasOwnProperty("imageURL")) { // if json has a property imageURL 
+                                    if (objIts[j].imageURL == childImgDiv) { // and if it is metch with childImgDiv create the element from favorites modal
+                                        const containerDivObj = document.createElement("div")
+                                        containerDivObj.classList.add("containerObj")
+                                            // container image
+                                        const containerImage = document.createElement("div")
+                                        containerImage.classList.add("containerImage")
+                                        containerDivObj.appendChild(containerImage)
+                                            // image
+                                        const img = document.createElement("img")
+                                        img.classList.add("imageObj")
+                                        img.src = objIts[j].imageURL
+                                        img.alt = "imageTumbnail"
+                                        img.width = "400px"
+                                        img.height = "400px"
+                                        containerImage.appendChild(img)
 
-                                    const containerDivText = document.createElement("div")
-                                    containerDivText.classList.add("containerDivText")
-                                        // h2 name
-                                    const h2 = document.createElement("h2")
-                                    h2.innerHTML = objIts[j].name
-                                    containerDivText.appendChild(h2)
-                                        // span price
-                                    const span = document.createElement("span")
-                                    span.innerHTML = `$${objIts[j].price}`
-                                    containerDivText.appendChild(span)
-                                        // p element
-                                    const article = document.createElement("article")
-                                    article.innerHTML = objIts[j].description
-                                    containerDivText.appendChild(article)
-                                        // button element
-                                    const button = document.createElement("button")
-                                    button.classList.add("addToCart")
-                                    button.id = "addToCart"
-                                    button.innerText = objIts[j].textButton
+                                        const containerDivText = document.createElement("div")
+                                        containerDivText.classList.add("containerDivText")
+                                            // h2 name
+                                        const h2 = document.createElement("h2")
+                                        h2.innerHTML = objIts[j].name
+                                        containerDivText.appendChild(h2)
+                                            // span price
+                                        const span = document.createElement("span")
+                                        span.innerHTML = `$${objIts[j].price}`
+                                        containerDivText.appendChild(span)
+                                            // p element
+                                        const article = document.createElement("article")
+                                        article.innerHTML = objIts[j].description
+                                        containerDivText.appendChild(article)
+                                            // button element
+                                        const button = document.createElement("button")
+                                        button.classList.add("addToCart")
+                                        button.id = "addToCart"
+                                        button.innerText = objIts[j].textButton
 
-                                    containerDivText.appendChild(button)
+                                        containerDivText.appendChild(button)
 
-                                    containerDivObj.appendChild(containerDivText)
-                                    containerOpenDialog.appendChild(containerDivObj)
+                                        containerDivObj.appendChild(containerDivText)
+                                        containerOpenDialog.appendChild(containerDivObj)
 
 
-                                    localStorage.setItem("itemHeart", JSON.stringify(containerOpenDialog.innerHTML))
-
-                                    break
+                                        localStorage.setItem("itemHeart", JSON.stringify(containerOpenDialog.innerHTML))
+                                            // check for items in favorites modal when click heart in items
+                                        checkLengthItemsInModals(containerOpenDialog, heartNotification)
+                                        break
+                                    }
                                 }
+
                             }
-
                         }
-                    }
 
-                })
-                break
-            }
-        })
+                    })
+                    break
+                }
+            })
+            // check for items in favorites modal when app open
+        checkLengthItemsInModals(containerOpenDialog, heartNotification)
+            // check for items in cart modal when app open
+            // checkLengthItemsInModals(containerOpenDialogCart, cartNotification)
     }, 1000)
 }
-
 getItem()
-    // create the items for cart when press "Add to cart" in favorites modal
+    // check for items in favorites modal
+function checkLengthItemsInModals(item1, item2) {
+    // console.log(item1.children)
+    if (item1.children.length === 0) {
+        item2.style.visibility = "hidden"
+    } else {
 
+        item2.style.visibility = "visible"
+        item2.innerHTML = item1.children.length
+    }
+}
 let srcImage
 let objIts2 = []
+    // create the items for cart when press "Add to cart" in favorites modal
 document.addEventListener('click', function(event) {
+        const containerOpenDialogCart = document.querySelector(".containerOpenDialogCart")
         const quantity = document.querySelector(".quantity")
         const amount = document.querySelector(".amount")
-        console.log(quantity)
+        const cartNotification = document.querySelector(".cartNotification")
+            // console.log(quantity)
             // target the Add to cart buttom
         if (event.target.id == 'addToCart') {
             event.stopPropagation()
@@ -222,17 +245,16 @@ document.addEventListener('click', function(event) {
             srcImage = childrenImg.getAttribute("src") // source image el
             const nameEl = parent.children[1].children[0] // h2 element
             const priceEl = parent.children[1].children[1] // span element
-            const z = priceEl.innerHTML
-            const x = Number(z.slice(1, z.length))
+            const z = priceEl.innerHTML // get the item price
+            const x = Number(z.slice(1, z.length)) // transform price in number
 
             createItemCart(srcImage, nameEl.innerText, x)
-            quantity.innerHTML = prices.length
-            const result = prices.reduce((total, num) => {
+            quantity.innerHTML = containerOpenDialogCart.children.length // populate the quantity spam information
+            const result = prices.reduce((total, num) => { // calculate the total price
                 return total + num
             }, 0)
             amount.innerHTML = result
-            console.log(prices)
-
+            checkLengthItemsInModals(containerOpenDialogCart, cartNotification)
         }
     })
     // create cart items when you pres any Add to cart button
@@ -274,4 +296,5 @@ const createItemCart = (image, nameItem, price, obj) => {
 
     // save in local storage
     localStorage.setItem("itemCart", JSON.stringify(containerOpenDialogCart.innerHTML))
+
 }
