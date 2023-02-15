@@ -221,7 +221,22 @@ nav .languagesForm select:focus {
   cursor: pointer;
   fill: #fdfdfd;
 }
-.openDialog .containerObj {
+.openDialog .containerOpenDialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.openDialog .containerOpenDialog .containerObj {
   margin: 0 auto 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,7 +252,7 @@ nav .languagesForm select:focus {
   background-color: aliceblue;
   border-radius: 3px;
 }
-.openDialog .containerObj .containerImage {
+.openDialog .containerOpenDialog .containerObj .containerImage {
   width: 40%;
   height: 90%;
   display: -webkit-box;
@@ -252,27 +267,27 @@ nav .languagesForm select:focus {
   border-radius: 3px;
   background-color: rgb(243, 249, 253);
 }
-.openDialog .containerObj .containerImage .imageObj {
+.openDialog .containerOpenDialog .containerObj .containerImage .imageObj {
   width: auto;
   height: 95%;
 }
-.openDialog .containerObj .containerDivText {
+.openDialog .containerOpenDialog .containerObj .containerDivText {
   width: 40%;
   height: 90%;
   margin-right: 90px;
 }
-.openDialog .containerObj .containerDivText h2 {
+.openDialog .containerOpenDialog .containerObj .containerDivText h2 {
   margin-bottom: 5px;
 }
-.openDialog .containerObj .containerDivText span {
+.openDialog .containerOpenDialog .containerObj .containerDivText span {
   font-size: 17px;
   font-weight: 700;
   margin-top: 10px;
 }
-.openDialog .containerObj .containerDivText article {
+.openDialog .containerOpenDialog .containerObj .containerDivText article {
   padding-top: 15px;
 }
-.openDialog .containerObj .containerDivText button {
+.openDialog .containerOpenDialog .containerObj .containerDivText button {
   border: none;
   padding: 10px;
   width: 200px;
@@ -345,6 +360,19 @@ nav .languagesForm select:focus {
 }
 .openDialogCart .containerOpenDialogCart {
   margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .openDialogCart .containerOpenDialogCart .containerObjCart {
   margin: 0 auto 10px;

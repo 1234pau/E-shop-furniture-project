@@ -161,54 +161,61 @@ nav {
         cursor: pointer;
         fill: $myColorWhite;
     }
-    .containerObj {
-        margin: 0 auto 10px;
+    .containerOpenDialog {
+        // border: 1px solid green;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        width: 95%;
-        height: 300px;
-        padding: 10px;
-        background-color: aliceblue;
-        border-radius: 3px;
-        .containerImage {
-            width: 40%;
-            height: 90%;
+        flex-direction: column;
+        justify-content: center;
+        .containerObj {
+            margin: 0 auto 10px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
+            width: 95%;
+            height: 300px;
+            padding: 10px;
+            background-color: aliceblue;
             border-radius: 3px;
-            background-color: rgb(243, 249, 253);
-            .imageObj {
-                width: auto;
-                height: 95%;
+            .containerImage {
+                width: 40%;
+                height: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 3px;
+                background-color: rgb(243, 249, 253);
+                .imageObj {
+                    width: auto;
+                    height: 95%;
+                }
             }
-        }
-        .containerDivText {
-            width: 40%;
-            height: 90%;
-            margin-right: 90px;
-            h2 {
-                margin-bottom: 5px;
-            }
-            span {
-                font-size: 17px;
-                font-weight: 700;
-                margin-top: 10px;
-            }
-            article {
-                padding-top: 15px;
-            }
-            button {
-                border: none;
-                padding: 10px;
-                width: 200px;
-                background-color: $myColorYelow;
-                margin-top: 20px;
-                font-size: 17px;
-                font-weight: 500;
-                outline: none;
-                cursor: pointer;
+            .containerDivText {
+                width: 40%;
+                height: 90%;
+                margin-right: 90px;
+                h2 {
+                    margin-bottom: 5px;
+                }
+                span {
+                    font-size: 17px;
+                    font-weight: 700;
+                    margin-top: 10px;
+                }
+                article {
+                    padding-top: 15px;
+                }
+                button {
+                    border: none;
+                    padding: 10px;
+                    width: 200px;
+                    background-color: $myColorYelow;
+                    margin-top: 20px;
+                    font-size: 17px;
+                    font-weight: 500;
+                    outline: none;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -264,6 +271,10 @@ nav {
     }
     .containerOpenDialogCart {
         margin-top: 70px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
         .containerObjCart {
             margin: 0 auto 10px;
             display: flex;

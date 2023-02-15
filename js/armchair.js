@@ -85,9 +85,8 @@ async function products() {
                 const cartNotification = document.querySelector(".cartNotification")
                 createItemCart(item.imageURL, item.name, item.price, item)
                 console.log("add to cart from items")
-                checkLengthItemsInModals(containerOpenDialogCart, cartNotification)
+                    // checkLengthItemsInModals(containerOpenDialogCart, cartNotification)
             })
-
             if (tipeOfItem[item.imageURL] === childImgDiv) { // push the object in array
                 objIts.push(item)
             }
@@ -130,6 +129,7 @@ function getItem() {
         const heartNotification = document.querySelector(".heartNotification")
         const containerOpenDialogCart = document.querySelector(".containerOpenDialogCart")
         const cartNotification = document.querySelector(".cartNotification")
+
 
         // if local storage has already items in, add the new one
         if (localStorage.getItem("itemHeart")) {
@@ -210,14 +210,12 @@ function getItem() {
             })
             // check for items in favorites modal when app open
         checkLengthItemsInModals(containerOpenDialog, heartNotification)
-            // check for items in cart modal when app open
-            // checkLengthItemsInModals(containerOpenDialogCart, cartNotification)
     }, 1000)
 }
 getItem()
     // check for items in favorites modal
 function checkLengthItemsInModals(item1, item2) {
-    // console.log(item1.children)
+    console.log(item1.children)
     if (item1.children.length === 0) {
         item2.style.visibility = "hidden"
     } else {
@@ -226,6 +224,7 @@ function checkLengthItemsInModals(item1, item2) {
         item2.innerHTML = item1.children.length
     }
 }
+
 let srcImage
 let objIts2 = []
     // create the items for cart when press "Add to cart" in favorites modal
@@ -234,8 +233,8 @@ document.addEventListener('click', function(event) {
         const quantity = document.querySelector(".quantity")
         const amount = document.querySelector(".amount")
         const cartNotification = document.querySelector(".cartNotification")
-            // console.log(quantity)
-            // target the Add to cart buttom
+
+        // target the Add to cart buttom
         if (event.target.id == 'addToCart') {
             event.stopPropagation()
                 // target the parent of the parent button witch is containerObj
@@ -249,20 +248,23 @@ document.addEventListener('click', function(event) {
             const x = Number(z.slice(1, z.length)) // transform price in number
 
             createItemCart(srcImage, nameEl.innerText, x)
-            quantity.innerHTML = containerOpenDialogCart.children.length // populate the quantity spam information
+                // quantity.innerHTML = containerOpenDialogCart.children.length // populate the quantity spam information
             const result = prices.reduce((total, num) => { // calculate the total price
                 return total + num
             }, 0)
             amount.innerHTML = result
-            checkLengthItemsInModals(containerOpenDialogCart, cartNotification)
+
         }
     })
     // create cart items when you pres any Add to cart button
 const createItemCart = (image, nameItem, price, obj) => {
     const containerOpenDialogCart = document.querySelector(".containerOpenDialogCart")
+    const amount = document.querySelector(".amount")
+    const cartNotification = document.querySelector(".cartNotification")
     if (localStorage.getItem("itemCart")) {
         containerOpenDialogCart.innerHTML = JSON.parse(localStorage.getItem("itemCart"))
     }
+
     const containerDivObjCart = document.createElement("div")
     containerDivObjCart.classList.add("containerObjCart")
         // container image
@@ -293,8 +295,10 @@ const createItemCart = (image, nameItem, price, obj) => {
         // container
     containerOpenDialogCart.appendChild(containerDivObjCart)
     prices.push(price)
+        // localStorage.setItem("prices", JSON.stringify(prices))
 
     // save in local storage
     localStorage.setItem("itemCart", JSON.stringify(containerOpenDialogCart.innerHTML))
+    checkLengthItemsInModals(containerOpenDialogCart, cartNotification)
 
 }
